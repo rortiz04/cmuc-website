@@ -2,6 +2,8 @@
 
 Sitio web oficial del Colegio Mayor Universitario de Córdoba (CMUC), una institución educativa sin fines de lucro fundada en la década del 50 por el monseñor Eladio Bordagaray.
 
+🌐 **Sitio en vivo**: [https://colegiomayorcba.com](https://colegiomayorcba.com)
+
 ## 🏛️ Acerca del Proyecto
 
 Este sitio web presenta la historia, valores y servicios del Colegio Mayor Universitario de Córdoba, que se rige bajo tres pilares fundamentales:
@@ -16,7 +18,9 @@ Este sitio web presenta la historia, valores y servicios del Colegio Mayor Unive
 - **Framework CSS**: Bootstrap 4
 - **Iconos**: Font Awesome
 - **Email**: SMTP con Gmail
-- **Túnel público**: Ngrok (desarrollo)
+- **Hosting**: Ferozoo
+- **Dominio**: colegiomayorcba.com
+- **Desarrollo**: Ngrok (túneles públicos)
 
 ## 📋 Características
 
@@ -27,6 +31,28 @@ Este sitio web presenta la historia, valores y servicios del Colegio Mayor Unive
 - ✅ Enlaces a documentos históricos (PDFs)
 - ✅ Integración con redes sociales
 - ✅ Mapa de ubicación
+- ✅ Build automático para producción
+- ✅ Deployment optimizado
+
+## 🛠️ Desarrollo Rápido
+
+### Comandos Principales
+```bash
+# Desarrollo local
+./cmuc.sh dev
+
+# Generar versión de producción
+./cmuc.sh build
+
+# Preparar deployment
+./cmuc.sh deploy
+
+# Limpiar archivos
+./cmuc.sh clean
+
+# Servir archivos estáticos
+./cmuc.sh serve
+```
 
 ## 🛠️ Instalación y Configuración
 
