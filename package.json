@@ -1,0 +1,17 @@
+{
+  "name": "cmuc-website",
+  "version": "1.0.0",
+  "description": "Colegio Mayor Universitario de Córdoba - Website",
+  "main": "server.py",
+  "scripts": {
+    "dev": "micromamba run -n cmuc python server.py",
+    "build": "micromamba run -n cmuc python build.py",
+    "serve": "python -m http.server 8000 --directory dist",
+    "clean": "rm -rf dist",
+    "deploy:prepare": "npm run clean && npm run build",
+    "deploy": "micromamba run -n cmuc python deploy.py"
+  },
+  "keywords": ["flask", "website", "cmuc", "colegio"],
+  "author": "CMUC",
+  "license": "MIT"
+}

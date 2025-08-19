@@ -18,6 +18,15 @@ var/
 wheels/
 share/python-wheels/
 *.egg-info/
+
+# Archivos de deployment específicos del proyecto
+colegiomayorcba_deploy_*.zip
+*.zip
+
+# Archivos de ambiente
+.env
+.env.local
+.env.production
 .installed.cfg
 *.egg
 MANIFEST
