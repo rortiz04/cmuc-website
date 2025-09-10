@@ -5855,6 +5855,24 @@ a.close.disabled {
   content: "";
 }
 
+.fotoscasa {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.fotoscamada {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.actividades {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 .carousel-item {
   position: relative;
   display: none;
