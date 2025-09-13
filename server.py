@@ -47,7 +47,6 @@ def handle_contact():
         send_email({
             'name': data.get('name'),
             'email': data.get('email'),
-            'phone': data.get('phone'),
             'message': data.get('message')
         })
         return jsonify(success=True)
@@ -61,7 +60,6 @@ def send_email(data):
             f"Nuevo mensaje de contacto desde el sitio web CMUC:\n\n"
             f"Nombre: {data['name']}\n"
             f"Email: {data['email']}\n"
-            f"Teléfono: {data['phone']}\n"
             f"Mensaje: {data['message']}"
         )
         msg['Subject'] = 'Nuevo contacto desde el sitio web CMUC'
