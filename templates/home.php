@@ -7,14 +7,14 @@
         <meta name="author" content="" />
         <title>Colegio Mayor Universitario de Córdoba</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="static/assets/img/portfolio/cmuc.png" />
+    <link rel="icon" type="image/x-icon" href="/static/assets/img/portfolio/cmuc.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="static/css/styles.css" rel="stylesheet" />
+    <link href="/static/css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -34,11 +34,11 @@
             </div>
         </nav>
         <!-- Masthead-->
-            <header style="background: url('static/fondo.jpg'); contain:layout; background-attachment: fixed; background-position: center; box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.7);"
+            <header style="background: url('/static/fondo.jpg'); contain:layout; background-attachment: fixed; background-position: center; box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.7);"
             class="masthead text-center">
                 <div class="container d-flex align-items-center flex-column">
                     <!-- Masthead Avatar Image-->
-                    <img class="masthead-avatar mb-5" src="static/img/portfolio/CMUCblancof4f6ff.png" alt="CMUC Logo" />
+                    <img class="masthead-avatar mb-5" src="/static/img/portfolio/CMUCblancof4f6ff.png" alt="CMUC Logo" />
                     <!-- Masthead Heading-->
                     <h1 class="masthead-heading text-uppercase mb-0 textoblanco">Colegio Mayor Universitario de Córdoba</h1>
                     <!-- Icon Divider-->
@@ -68,7 +68,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div id="plus" class="portfolio-item-caption-content text-center"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="static/img/cmuc/frente.jpg" alt="Frente del CMUC" />
+                            <img class="img-fluid" src="/static/img/cmuc/frente.jpg" alt="Frente del CMUC" />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -77,7 +77,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div id="plus" class="portfolio-item-caption-content text-center"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="static/img/cmuc/intendencia.jpg" alt="Intendencia CMUC" />
+                            <img class="img-fluid" src="/static/img/cmuc/misaborda.jpg" alt="Misa Bordagaray" />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -86,7 +86,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div id="plus" class="portfolio-item-caption-content text-center"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="static/img/cmuc/fogata.jpg" alt="Actividades de convivencia" />
+                            <img class="img-fluid" src="/static/img/cmuc/fogata.jpg" alt="Actividades de convivencia" />
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="">
                     <div class="col text-center">
-                        <a class="btn btn-primary btn-xl" target="_blank" href="static/assets/organigrama.pdf">
+                        <a class="btn btn-primary btn-xl" target="_blank" href="/static/assets/organigrama.pdf">
                             <i class="fas fa-users"></i>
                             Organigrama
                         </a>
@@ -131,13 +131,13 @@
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <a class="btn btn-primary btn-xl" target="_blank" href="static/assets/Carta Padre Bordagaray.pdf">
+                        <a class="btn btn-primary btn-xl" target="_blank" href="/static/assets/Carta Padre Bordagaray.pdf">
                             <i class="fas fa-feather-alt"></i>
                             Carta de Bordagaray
                         </a>
                     </div>
                     <div class="col text-center">
-                        <a class="btn btn-primary btn-xl" target="_blank" href="static/assets/Biografía Padre Bordagaray.pdf">
+                        <a class="btn btn-primary btn-xl" target="_blank" href="/static/assets/Biografía Padre Bordagaray.pdf">
                             <i class="fas fa-cross"></i>
                             Biografía de Bordagaray
                         </a>
@@ -224,17 +224,227 @@
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
-        <!-- ...existing code for modals and carousels, update all src="{{ url_for('static', filename='...') }}" to src="static/..." ... -->
+    <div class="portfolio-modal modal fade" id="modalConvivencia" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Camadas</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-university"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                                    </ol>
+                                    <div class="carousel-inner fotoscamada">
+                                    <div class="carousel-item active">
+                                        <img src="/static/img/cmuc/CAMADA2017.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2018.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2019.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2022.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2023.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2024.jpeg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/static/img/cmuc/CAMADA2025.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5 lead">Durante un fin de semana, cada camada de ingresantes recibe su bienvenida al colegio de parte de sus compañeros. Gran momento para reforzar lazos de camaradería, distenderse y renovar la energía para arrancar el año</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="modalIntendencia" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Actividades</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-university"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    </ol>
+                                    <div class="carousel-inner actividades">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="/static/img/cmuc/charla.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/misaborda.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/misaborda2.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/locro.jpg" alt="Fourth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/empanadas.jpg" alt="Fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/intendencia.jpg" alt="Sixth slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5 lead">Imágenes de los días donde pintamos todo el patio de Laprida 37, arreglamos los peldaños de una escalera e hicimos el revestimiento de una mesada. Este evento se realiza 2 veces por año, tiene como fin mejorar las instalaciones y darle mantenimiento a la casa. Participamos todos los miembros del colegio</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="modalCasa" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Casa</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-university"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner fotoscasa">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="/static/img/cmuc/casa1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/casa2.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/casa3.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/casa4.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="/static/img/cmuc/casa5.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5 lead">Imagenes de nuestro hogar en la actualidad</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
-        <script src="static/assets/mail/quick_contact.js"></script>
+    <script src="/static/assets/mail/quick_contact.js"></script>
         <!-- Core theme JS-->
-        <script src="static/js/scripts.js"></script>
+    <script src="/static/js/scripts.js"></script>
     </body>
 </html>

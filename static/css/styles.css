@@ -10200,6 +10200,12 @@ h3 {
   font-size: 1.5rem;
 }
 
+.portfolio-item .img-fluid {
+    width: 100%;
+    height: 400px;      /* Ajusta la altura según prefieras */
+    object-fit: cover;  /* Recorta y centra la imagen */
+}
+
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
