@@ -163,3 +163,6 @@ Thumbs.db
 # Ngrok
 ngrok
 ngrok.exe
+
+# PHPMailer config (no subir credenciales)
+static/assets/mail/config.php

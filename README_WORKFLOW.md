@@ -9,9 +9,10 @@ Sitio web oficial del CMUC con flujo de desarrollo local y deployment a producci
 
 ## 🚀 Configuración Inicial
 
-### 1. Instalar Dependencias de Python
+### 1. Instalar Dependencias de PHP
+Asegúrate de tener PHP instalado en tu sistema. Puedes verificarlo con:
 ```bash
-pip install -r requirements.txt
+php -v
 ```
 
 ### 2. Configurar Variables de Entorno
@@ -37,7 +38,7 @@ npm --version
 # Iniciar servidor de desarrollo
 npm run dev
 # o directamente:
-python server.py
+php -S localhost:8000
 ```
 
 El sitio estará disponible en: http://localhost:5000
@@ -204,3 +205,21 @@ Para issues técnicos, revisar:
    - Visitar https://colegiomayorcba.com
    - Probar todas las funciones
    - Verificar rendimiento
+
+# Flujo de trabajo CMUC Website (actualizado 2025)
+
+## Backend
+- El backend es PHP puro, sin dependencias de Python ni Flask.
+- El formulario de contacto usa `static/assets/mail/send_message.php` (PHPMailer, SMTP).
+
+## Frontend
+- Todo el sitio es HTML, CSS y JS (Bootstrap, animaciones, etc.).
+- No hay plantillas dinámicas ni rutas especiales.
+
+## Despliegue
+- Subir todo el contenido a la raíz pública del hosting Ferozo.
+- Configurar `config.php` para el correo.
+
+## Notas
+- Si necesitas lógica adicional, puedes agregar PHP en `index.php`.
+- Para detalles de configuración, ver `README_FEROZO.md`.
