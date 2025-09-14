@@ -237,9 +237,14 @@ button {
   border-radius: 0;
 }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+
+
+@media (max-width: 600px) {
+  button:focus, input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--secondary) !important;
+    box-shadow: 0 0 0 2px var(--secondary)22 !important; /* sutil glow */
+    border-color: var(--secondary) !important;
+  }
 }
 
 input,
@@ -10312,13 +10317,13 @@ h3 {
 
 .fixed-contact-buttons .icon > .fa-whatsapp {
   font-size: 42px !important;
-  margin-left: -4px !important;
+  margin-left: 0 !important;
   line-height: 1 !important;
 }
 
 .fixed-contact-buttons .icon > .fa-envelope {
   font-size: 32px !important;
-  margin-left: -2px !important;
+  margin-left: 0 !important;
   line-height: 1 !important;
 }
 
@@ -10332,11 +10337,34 @@ h3 {
     gap: 10px;
   }
   .fixed-contact-buttons .icon {
-    font-size: 22px;
+    font-size: 20px;
   }
   .fixed-contact-buttons .btn-label {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
+  .fixed-contact-buttons .icon > .fa-whatsapp { font-size: 30px !important; margin-left:0 !important; }
+  .fixed-contact-buttons .icon > .fa-envelope { font-size: 24px !important; margin-left:0 !important; }
+}
+
+/* Ajuste extra para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .fixed-contact-buttons {
+    bottom: 20px;
+    right: 16px;
+    gap: 14px;
+  }
+  .fixed-contact-buttons button,
+  .fixed-contact-buttons a {
+    min-width: 110px;
+    height: 44px;
+    font-size: 18px;
+    padding: 0 14px 0 10px;
+    gap: 8px;
+  }
+  .fixed-contact-buttons .btn-label { font-size: 0.8rem; }
+  .fixed-contact-buttons .icon { font-size: 18px; }
+  .fixed-contact-buttons .icon > .fa-whatsapp { font-size: 26px !important; margin-left:0 !important; }
+  .fixed-contact-buttons .icon > .fa-envelope { font-size: 22px !important; margin-left:0 !important; }
 }
 
 .contact-modal {
