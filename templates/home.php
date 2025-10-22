@@ -253,29 +253,33 @@
                                         <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                                         <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
                                         <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
                                     </ol>
                                     <div class="carousel-inner fotoscamada">
-                                    <div class="carousel-item active">
-                                        <img src="/static/img/cmuc/CAMADA2017.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2018.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2019.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2022.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2023.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2024.jpeg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/static/img/cmuc/CAMADA2025.jpg" class="d-block w-100" alt="...">
-                                    </div>
+                                        <div class="carousel-item active">
+                                            <img src="/static/img/cmuc/CAMADAANTIGUA.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2017.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2018.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2019.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2022.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2023.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2024.jpeg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/static/img/cmuc/CAMADA2025.jpg" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -287,7 +291,7 @@
                                     </a>
                                 </div>
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5 lead">Durante un fin de semana, cada camada de ingresantes recibe su bienvenida al colegio de parte de sus compañeros. Gran momento para reforzar lazos de camaradería, distenderse y renovar la energía para arrancar el año</p>
+                                <p class="mb-5 lead parrafo">Durante un fin de semana, cada camada de ingresantes recibe su bienvenida al colegio de parte de sus compañeros. Gran momento para reforzar lazos de camaradería, distenderse y renovar la energía para arrancar el año</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
                                     Cerrar
@@ -358,7 +362,7 @@
                                     </a>
                                 </div>
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5 lead">Imágenes de los días donde pintamos todo el patio de Laprida 37, arreglamos los peldaños de una escalera e hicimos el revestimiento de una mesada. Este evento se realiza 2 veces por año, tiene como fin mejorar las instalaciones y darle mantenimiento a la casa. Participamos todos los miembros del colegio</p>
+                                <p class="mb-5 lead parrafo">Imágenes de los días donde pintamos todo el patio de Laprida 37, arreglamos los peldaños de una escalera e hicimos el revestimiento de una mesada. Este evento se realiza 2 veces por año, tiene como fin mejorar las instalaciones y darle mantenimiento a la casa. Participamos todos los miembros del colegio</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
                                     Cerrar
@@ -425,7 +429,7 @@
                                     </a>
                                 </div>
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5 lead">Imagenes de nuestro hogar en la actualidad</p>
+                                <p class="mb-5 lead parrafo">Imagenes de nuestro hogar en la actualidad</p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
                                     Cerrar
