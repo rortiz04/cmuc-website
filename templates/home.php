@@ -182,7 +182,7 @@
             <!-- Botones flotantes de contacto y modal -->
             <div class="fixed-contact-buttons">
             <button id="contactEmailBtn" aria-label="Enviar email" title="Enviar email">
-                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span class="icon email"><i class="fas fa-envelope"></i></span>
                 <span class="btn-label">Consultar</span>
             </button>
             <a id="contactWhatsAppBtn"

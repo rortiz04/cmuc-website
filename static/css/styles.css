@@ -529,7 +529,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #f4f6ff;
-  background-color: #212529;
+  background-color: #1f0d05;
   border-radius: 0.25rem;
 }
 kbd kbd {
@@ -2437,7 +2437,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #201202;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2458,12 +2458,12 @@ textarea.form-control {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #291601;
   text-decoration: none;
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2488,22 +2488,22 @@ fieldset:disabled a.btn {
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #f4f6ff;
-  background-color: #10375c;
-  border-color: #10375c;
-  box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+  background-color: #9E3505;
+  border-color: #000;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #f4f6ff;
-  background-color: #10375c;
-  border-color: #10375c;
+  background-color: #9E3505;
+  border-color: #000;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #f4f6ff;
-  background-color: #10375c;
-  border-color: #10375c;
+  background-color: #9E3505;
+  border-color: #000;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .btn-secondary {
@@ -3242,6 +3242,10 @@ input[type=button].btn-block {
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn.active {
   z-index: 1;
+}
+
+.btn:active{
+  color: #291601;
 }
 
 .btn-toolbar {
@@ -10145,7 +10149,7 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #f4f6ff;
-    background: #7a9388 ;
+    background: #f57b25;
   }
 
   #mainNav.navbar-shrink {
@@ -10268,6 +10272,9 @@ h3 {
   gap: 22px;
   z-index: 1200;
 }
+.email{
+  color: #fff;
+}
 
 .fixed-contact-buttons button,
 .fixed-contact-buttons a {
@@ -10324,6 +10331,7 @@ h3 {
   font-size: 42px !important;
   margin-left: 0 !important;
   line-height: 1 !important;
+  color: #fff;
 }
 
 .fixed-contact-buttons .icon > .fa-envelope {
@@ -10428,14 +10436,26 @@ h3 {
 .contact-modal input,
 .contact-modal textarea {
   border: 1px solid #ccc;
+  box-shadow: #000;
   padding: 10px 12px;
   font: inherit;
   border-radius: 6px;
   resize: vertical;
 }
+.contact-modal textarea:focus{
+  outline: none; 
+  border: 2px solid #ff9900; 
+  box-shadow: 0 0 5px #ffbb33; 
+}
+.contact-modal input:focus {
+  outline: none; 
+  border: 2px solid #ff9900; 
+  box-shadow: 0 0 5px #ffbb33; 
+}
+
 .contact-modal button[type="submit"] {
   width: 100%;
-  background: var(--secondary);
+  background: #995c1c;
   color: #fff;
   border: none;
   padding: 12px;
@@ -10445,7 +10465,7 @@ h3 {
   margin-top: 4px;
 }
 .contact-modal button[type="submit"]:hover {
-  background: #0d6efd;
+  background: #e6933c;
 }
 .status {
   margin-top: 10px;
