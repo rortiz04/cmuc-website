@@ -13,7 +13,7 @@ Este sitio web presenta la historia, valores y servicios del Colegio Mayor Unive
 
 ## 🚀 Tecnologías Utilizadas
 
-- **Backend**: Flask (Python)
+- **Backend**: PHP
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Framework CSS**: Bootstrap 4
 - **Iconos**: Font Awesome
@@ -34,32 +34,12 @@ Este sitio web presenta la historia, valores y servicios del Colegio Mayor Unive
 - ✅ Build automático para producción
 - ✅ Deployment optimizado
 
-## 🛠️ Desarrollo Rápido
-
-### Comandos Principales
-```bash
-# Desarrollo local
-./cmuc.sh dev
-
-# Generar versión de producción
-./cmuc.sh build
-
-# Preparar deployment
-./cmuc.sh deploy
-
-# Limpiar archivos
-./cmuc.sh clean
-
-# Servir archivos estáticos
-./cmuc.sh serve
-```
-
 ## 🛠️ Instalación y Configuración
 
 ### Prerrequisitos
 
-- Python 3.7+
-- pip (gestor de paquetes de Python)
+- PHP 7.2+
+- Composer (gestor de dependencias de PHP)
 
 ### Instalación
 
@@ -69,20 +49,12 @@ git clone https://github.com/tu-usuario/cmuc-website.git
 cd cmuc-website
 ```
 
-2. Crea un entorno virtual:
+2. Instala las dependencias:
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# o
-venv\Scripts\activate  # Windows
+composer install
 ```
 
-3. Instala las dependencias:
-```bash
-pip install -r requirements.txt
-```
-
-4. Configura las variables de entorno:
+3. Configura las variables de entorno:
    - Copia el archivo `.env.example` a `.env`
    - Completa las configuraciones necesarias
 
@@ -97,7 +69,7 @@ Para que el formulario de contacto funcione, necesitas configurar:
    - Úsala en lugar de tu contraseña regular
 
 2. **Configuración en el código**:
-   - Edita `server.py`
+   - Edita `static/assets/mail/config.php`
    - Reemplaza `EMAIL_USER` y `EMAIL_PASSWORD` con tus credenciales
 
 ### Configuración de Ngrok (Opcional)
@@ -112,30 +84,23 @@ Para desarrollo con túnel público:
 ### Desarrollo Local
 
 ```bash
-python server.py
+php -S localhost:8000
 ```
 
-El sitio estará disponible en `http://localhost:5000`
+El sitio estará disponible en `http://localhost:8000`
 
 ### Producción
 
 Para despliegue en producción, considera usar:
-- **Gunicorn** como servidor WSGI
-- **Nginx** como proxy reverso
+- **Apache** o **Nginx** como servidor web
 - **SSL/TLS** para HTTPS
-
-Ejemplo con Gunicorn:
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 server:app
-```
 
 ## 📁 Estructura del Proyecto
 
 ```
 cmuc-website/
-├── server.py              # Aplicación Flask principal
-├── requirements.txt       # Dependencias de Python
+├── index.php              # Página principal
+├── requirements.txt       # Dependencias de PHP
 ├── .env.example          # Variables de entorno de ejemplo
 ├── .gitignore            # Archivos ignorados por Git
 ├── static/               # Archivos estáticos
@@ -143,6 +108,7 @@ cmuc-website/
 │   ├── js/              # JavaScript
 │   ├── img/             # Imágenes
 │   └── assets/          # Documentos y recursos
+│       └── mail/        # Backend de contacto (PHPMailer)
 └── templates/           # Plantillas HTML
     └── index.html       # Página principal
 ```
@@ -160,9 +126,9 @@ EMAIL_RECIPIENT=colegiomayorcba@gmail.com
 # Configuración de Ngrok (opcional)
 NGROK_TOKEN=tu_token_de_ngrok
 
-# Configuración Flask
-FLASK_ENV=development
-FLASK_DEBUG=True
+# Configuración PHP
+PHP_ENV=development
+PHP_DISPLAY_ERRORS=1
 ```
 
 ## 📧 Configuración del Formulario de Contacto
@@ -226,3 +192,27 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ---
 
 *"No te conformes con ser bueno, ¡Sé santo!" - Padre Eladio Bordagaray*
+
+# CMUC Website
+
+Este sitio ahora funciona 100% con PHP y PHPMailer para el formulario de contacto. No requiere Python ni Flask.
+
+## Ventajas de la migración a PHP
+- **Compatibilidad total con hostings compartidos**: PHP es soportado por la mayoría de los proveedores (como Ferozo), sin configuraciones especiales.
+- **Despliegue sencillo**: Solo subís los archivos, sin necesidad de entornos virtuales, dependencias ni servidores adicionales.
+- **Menos mantenimiento**: No hay que preocuparse por versiones de Python, Flask o dependencias externas.
+- **Seguridad y robustez**: PHPMailer es el estándar para envío de mails en PHP y permite usar SMTP autenticado.
+- **Fácil de extender**: Si necesitás agregar lógica dinámica, PHP lo permite sin cambiar de stack.
+- **Frontend igual de moderno**: Todo el diseño, animaciones y JS siguen funcionando igual que antes.
+
+## Estructura principal
+- index.php (página principal)
+- static/ (CSS, JS, imágenes, PDFs)
+- static/assets/mail/send_message.php (backend de contacto, usa PHPMailer)
+
+## Migración
+- Se eliminaron todos los archivos de backend Python y plantillas Flask.
+- Para el formulario de contacto, configurar `static/assets/mail/config.php` según el ejemplo `config.sample.php`.
+
+## Despliegue en Ferozo
+Ver instrucciones detalladas en `README_FEROZO.md`.

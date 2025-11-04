@@ -21,16 +21,27 @@ document.addEventListener('DOMContentLoaded', function() {
     status.textContent = 'Enviando...';
     const data = new FormData(form);
     try {
-      const res = await fetch('/send_message', {
+      const res = await fetch('static/assets/mail/send_message.php', { // endpoint PHP
         method: 'POST',
         body: data
       });
-      if(!res.ok) throw new Error('Error');
-      status.textContent = '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.';
+      let payload = {};
+      try { payload = await res.json(); } catch(_) {}
+      if(!res.ok || !payload.success){
+        const msg = payload.error || 'Error al enviar';
+        status.textContent = msg;
+        return;
+      }
+      status.textContent = '¡Mensaje enviado con éxito!';
       form.reset();
-      setTimeout(closeModal, 1200);
+      setTimeout(() => {
+        const modal = document.getElementById('contactEmailModal');
+        modal.setAttribute('aria-hidden','true');
+        document.body.classList.remove('no-scroll');
+        status.textContent='';
+      }, 1500);
     } catch(err){
-      status.textContent = 'Error al enviar';
+      status.textContent = 'Error de red';
     }
   });
 });
